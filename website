@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>OCEAN 340 Final Project</title>
+</head>
+<body>
+    <div id="name">
+        <div>
+            <h1>
+                OCEAN 340 Final Project
+            </h1>
+        </div>
+        <div>
+            <h1>
+                by Derya Gumustel
+            </h1>
+        </div>
+    </div>
+    <p id="firstParagraph">
+            This website was made for my final project for the UW OCEAN 340 course. My project involved 
+            looking at Puget Sound time series data of chlorophyll and oxygen concentrations in surface waters over 
+            a period of 60 days. These buttons will download the data files I used and the code I wrote 
+            to do my analysis. You can also go to the Northwest Association of Networked Ocean Observing Systems
+             (NANOOS) Data Explorer website where I found my data.
+    </p>
+    <br>
+    <center>
+    <a href="http://students.washington.edu/deryag/datadownload.zip" download type="button" class="btn btn-info">Download data
+    </a>
+    <a href="http://students.washington.edu/deryag/script.py" download type="button" class="btn btn-info">Download python code
+    </a>
+    <a href="http://nvs.nanoos.org/Explorer" type="button" class="btn btn-dark">NANOOS Data Explorer</a>
+    
+    <p id="restOfParagraphs">
+        <br>
+        Below is a map of the Puget Sound region that shows the data collection sites. The locations I 
+        selected for analysis had consistent sampling during the available 60-day period and offered 
+        insight to three different areas of the Pacific Northwest: the Puget Sound Main basin, the North 
+        basin, and the Washington coast. Phytoplankton populations are strongly influenced by their 
+        environment; factors include residence times, sunlight supply, water column stratification, and nutrient 
+        availability. Studying chlorophyll concentrations in different settings can give oceanographers a 
+        stronger idea of the relationships between the phytoplankton communities and their environments. 
+    
+    </p>
+    <img src="plot4.png"  style="widows: 1000px;height:600px;">
+    <p id="restOfParagraphs">
+        <br>
+        The first part of my analysis required averaging the time series data into daily values for easy 
+        visualization. I plotted the daily averages of chlorophyll and oxygen concentrations individually 
+        for each of the four locations, shown here. Many locations were missing data for the start of January 
+        which could not be filled by interpolation.
+    </p>
+    <img src="plot1.png"  style="Widows: 1000px;height:600px;">
+    <p id="restOfParagraphs">
+        <br>
+        Next, I wanted to compare trends through time in chlorophyll and oxygen concentrations across locations. 
+        Chlorophyll concentrations varied strongly throughout the sampled region, while oxygen concentrations 
+        were very similar at each site.
+    </p>
+        <img src="plot2.png"  style="widows: 1000px;height:600px;">
+    <p id="restOfParagraphs">
+        <br>
+        Finally, I investigated the relationship between chlorophyll, a proxy for phytoplankton populations, 
+        and oxygen, a product of photosynthesis. Although phytoplankton are the major producer of oxygen in 
+        marine environments, I suspect that the majority of the oxygen in surface waters comes from the exchange of gas
+        across the ocean-atmosphere interface. Each location saw a positive correlation between chlorophyll and oxygen concentrations, 
+        with r-squared values ranging between 0.00156 in Bellingham and 0.468 in coastal waters. Seasonally heightened
+        gas exchange due to heavy wind-driven surface mixing may have weakened the relationship between chlorophyll 
+        and oxygen.
+    </p>
+        <img src="plot3.png"  style="widows: 1000px;height:600px;">
+    <p id="restOfParagraphs">
+        <br>
+        In the future, I would be interested in expanding my time series analysis to include at least a full 
+        year’s worth of chlorophyll data to look further into seasonal variability in phytoplankton populations. 
+        The correlation between chlorophyll and oxygen concentrations proved to be small, so my focus might 
+        shift from oxygen to other measurable influences on phytoplankton populations. Some options would be water 
+        temperature and nearby river discharge, as well as nitrogen or other dissolved nutrient concentrations. 
+        <br>
+        <br>
+        This work was self-directed and made possible thanks to the guidance and support of my OCEAN 340 instructors 
+        and peers. If you'd like to run my python code please download the data files and python code from the download 
+        buttons above and place them into the same folder in order for the script to run.
+        <br>
+        <br>
+    </p>
+    </center>
+</body>
+
+</html>
