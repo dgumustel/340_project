@@ -1,2 +1,2 @@
 # 340_project
-Contains material for my final project for an intermediate python course 
+Project material for an intermediate oceanographic python course (OCEAN 340) at the University of Washington.
